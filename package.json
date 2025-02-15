@@ -1,27 +1,30 @@
 {
-  "name": "astral-strix.js",
-  "version": "0.0.1",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jez-er/Strix.js.git"
-  },
-  "keywords": [],
-  "author": {
-    "name": "Astral Team",
-    "url": "https://github.com/Jez-er"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/Jez-er/Strix.js/issues"
-  },
-  "homepage": "https://github.com/Jez-er/Strix.js#readme",
-  "devDependencies": {
-    "typescript": "^5.7.3"
-  }
+	"name": "astral-strix.js",
+	"version": "0.0.3",
+	"description": "",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rollup -c"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jez-er/Strix.js.git"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Astral Team",
+		"url": "https://github.com/Jez-er"
+	},
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/Jez-er/Strix.js/issues"
+	},
+	"homepage": "https://github.com/Jez-er/Strix.js#readme",
+	"devDependencies": {
+		"rollup": "^4.34.7",
+		"rollup-plugin-typescript2": "^0.36.0",
+		"typescript": "^5.7.3"
+	}
 }
