@@ -1,1 +1,1 @@
-export * from './core/index';
+export { default as Strix } from './core/index';
