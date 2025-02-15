@@ -1,3 +1,4 @@
 export function strixInit() {
-  console.log("Hello from Astrla Team");
+	const text: string = 'Hello from Astral Team'
+	console.log(text)
 }
