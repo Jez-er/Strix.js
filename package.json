@@ -1,0 +1,26 @@
+{
+	"name": "strix-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"s": "tsc && node dist/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jez-er/Strix.js.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Jez-er/Strix.js/issues"
+	},
+	"homepage": "https://github.com/Jez-er/Strix.js#readme",
+	"dependencies": {
+		"astral-strix.js": "^0.0.5"
+	},
+	"devDependencies": {
+		"typescript": "^5.7.3"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ESNext", // Убедитесь, что target - ESNext
+		"module": "ESNext", // Убедитесь, что модуль - ESNext
+		"moduleResolution": "node", // Разрешение модулей, как в Node.js
+		"esModuleInterop": true, // Поддержка импорта CommonJS в ES модулях
+		"allowSyntheticDefaultImports": true, // Поддержка default-импорта из модулей
+		"outDir": "./dist", // Вывод в dist
+		"declaration": true, // Генерация .d.ts файлов
+		"sourceMap": true, // Генерация sourcemaps
+		"strict": true, // Включение строгой проверки типов
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules"]
+}
