@@ -25,4 +25,5 @@ export default {
 			useTsconfigDeclarationDir: true, // Это заставит генерировать декларации типов в папке dist
 		}),
 	],
+	external: ['express'],
 }
