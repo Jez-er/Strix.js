@@ -1,5 +1,5 @@
 import { RequestHandler } from 'express';
-import { IServerConfig } from 'types';
+import { IServerConfig } from '../types';
 declare class Strix {
     private config;
     private readonly app;

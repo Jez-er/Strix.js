@@ -1,19 +1,18 @@
-import ServerConfig from 'configs/server.config'
 import express, { RequestHandler } from 'express'
-import { IServerConfig } from 'types'
+import { IServerConfig } from '../types'
 import Client from './client'
 
 class Strix {
 	private config: IServerConfig
 	private readonly app = express()
-
-	private client = new Client(this.app)
+	private client: Client
 
 	constructor(userConfig?: IServerConfig) {
-		this.config = userConfig || ServerConfig
-		if (!this.config) {
+		if (!userConfig) {
 			throw new Error('Configuration is not provided!')
 		}
+		this.config = userConfig
+		this.client = new Client(this.app)
 	}
 
 	private onSetup() {

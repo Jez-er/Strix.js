@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"target": "es6",
+		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
@@ -13,8 +13,10 @@
 		"resolveJsonModule": true,
 		"baseUrl": ".",
 		"paths": {
-			"*": ["node_modules/*", "src/*"]
+			"*": ["node_modules/*", "src/*"],
+			"@": ["./src/*"]
 		}
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*", "src/tests/**/*"],
+	"exclude": ["node_modules", "dist"]
 }

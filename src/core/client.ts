@@ -4,8 +4,6 @@ import { Express } from './../../node_modules/@types/express-serve-static-core/i
 class Client {
 	private readonly app: Express
 
-	// private __filename = fileURLToPath(import.meta.url)
-	// private __dirname = path.dirname(this.__filename)
 	constructor(app: Express) {
 		this.app = app
 	}
