@@ -1,15 +1,8 @@
 import express from 'express';
 import path from 'path';
 
-const ServerConfig = {
-    port: 3000,
-    clientUrl: '/',
-    serverUrl: '/api',
-};
-
 class Client {
-    // private __filename = fileURLToPath(import.meta.url)
-    // private __dirname = path.dirname(this.__filename)
+    app;
     constructor(app) {
         this.app = app;
     }
@@ -21,13 +14,15 @@ class Client {
 }
 
 class Strix {
+    config;
+    app = express();
+    client;
     constructor(userConfig) {
-        this.app = express();
-        this.client = new Client(this.app);
-        this.config = userConfig || ServerConfig;
-        if (!this.config) {
+        if (!userConfig) {
             throw new Error('Configuration is not provided!');
         }
+        this.config = userConfig;
+        this.client = new Client(this.app);
     }
     onSetup() {
         console.info(`Server started! 
